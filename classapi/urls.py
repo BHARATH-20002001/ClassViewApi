@@ -20,6 +20,6 @@ from app.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('ProducCrud/',ProducCrud.as_view(),name='ProducCrud'),
+    path('ProducCrud/<prod_id>/',ProducCrud.as_view(),name='ProducCrud'),
 
 ]
